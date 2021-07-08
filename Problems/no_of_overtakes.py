@@ -1,4 +1,4 @@
-carList = [4,3,1,2]
+carList = [4,1,3,2]
 overtake = 0
 
 for i in range(len(carList)):
