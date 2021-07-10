@@ -1,10 +1,10 @@
-carList = [4,1,3,2]
+  
+carList = [4, 1, 2, 5]
 overtake = 0
 
 for i in range(len(carList)):
-    for j in range(0,len(carList)):
-        if (carList[i] > carList[j]):
-            carList[i],carList[j]=carList[j],carList[i]
-            overtake= overtake+1
-print("Number of overtakes are:"+str(overtake))
-    
+    for j in range(i+1, len(carList)):
+        if(carList[j] < carList[i]):
+            overtake += 1
+
+print(overtake)
